@@ -71,14 +71,14 @@ class MusicLibraryController
               puts "#{idx}. #{song.artist.name} - #{song.name}"
             end
           end
-  
+
 
           def play_song
              puts "What song would you like to play?"
              answer = gets.chomp.to_i
              puts "Playing #{Song.all[answer-1].artist.name} - #{Song.all[answer-1].name} - #{Song.all[answer-1].genre.name}"
-           end	
+           end
 
 
-      
+
 end
