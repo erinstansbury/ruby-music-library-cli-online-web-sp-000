@@ -71,7 +71,7 @@ class MusicLibraryController
               puts "#{idx}. #{song.artist.name} - #{song.name}"
             end
           end
-        end
+  
 
       def play_song
         puts "Which song number would you like to play?"
@@ -82,3 +82,4 @@ class MusicLibraryController
             end
           end
       end
+    end
