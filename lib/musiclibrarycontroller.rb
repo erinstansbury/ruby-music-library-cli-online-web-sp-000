@@ -74,7 +74,8 @@ class MusicLibraryController
 
         def play_song
            puts "Which song number would you like to play?"
-             input = gets.chomp.to_i
+             input = gets.strip.to_i
+             if input >= 1 && input <= Song.all.length
              puts "Playing #{Song.all[input-1].artist.name}"
            end
          end
